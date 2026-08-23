@@ -524,7 +524,7 @@ export const AdminChatArea: React.FC<AdminChatAreaProps> = ({ onToggleContextPan
           const seenMsgKeys = new Set<string>();
 
           for (const m of messages) {
-            const isWelcome = m.senderId === 'agent_auto_welcome' || (m.content && (m.content.includes('DlAM0ND') || m.content.includes('allpanelexch9') || m.content.includes('DIAMOND')));
+            const isWelcome = m.senderId === 'agent_auto_welcome' || (m.content && (m.content.includes('SUPREME') || m.content.includes('DlAM0ND') || m.content.includes('allpanelexch9') || m.content.includes('DIAMOND')));
             const isPrompt = m.senderId === 'agent_auto_prompt' || (m.content && (m.content.includes('Please enter your name') || m.content.includes('Please share your name')));
 
             let msgKey = m._id || `${m.senderId}_${m.content}`;
