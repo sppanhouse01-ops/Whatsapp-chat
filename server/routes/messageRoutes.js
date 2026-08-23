@@ -193,7 +193,7 @@ router.post('/', async (req, res) => {
         conversation: conversationId,
         $or: [
           { senderId: 'agent_auto_welcome' },
-          { content: { $regex: 'DlAM0ND|allpanelexch9|DIAMOND', $options: 'i' } }
+          { content: { $regex: 'SUPREME EXCHANGE|DlAM0ND|allpanelexch9|DIAMOND', $options: 'i' } }
         ]
       });
 
@@ -204,12 +204,54 @@ router.post('/', async (req, res) => {
               conversation: conversationId,
               $or: [
                 { senderId: 'agent_auto_welcome' },
-                { content: { $regex: 'DlAM0ND|allpanelexch9|DIAMOND', $options: 'i' } }
+                { content: { $regex: 'SUPREME EXCHANGE|DlAM0ND|allpanelexch9|DIAMOND', $options: 'i' } }
               ]
             });
             if (alreadySent) return;
 
-            const welcomeText = `💎 𝐖𝐄𝐋𝐂𝐎𝐌𝐄 𝐓𝐎 DlAM0ND 𝐄𝐗𝐂𝐇𝐀𝐍𝐆𝐄 💎\n𝐈𝐍𝐃𝐈𝐀’𝐒 𝐅𝐈𝐑𝐒𝐓 𝐌𝐄𝐓𝐀 𝐕𝐄𝐑𝐈𝐅𝐈𝐄𝐃 ✅ 𝐄𝐗𝐂𝐇𝐀𝐍𝐆𝐄 𝐁𝐑𝐀𝐍𝐃\n━━━━━━━━━━━━━━━\nAvailable site\n\nhttps://allpanelexch9.game\n━━━━━━━━━━━━━━━\n𝐌𝐢𝐧𝐢𝐦𝐮𝐦 🆔 @ 𝟐𝟎𝟎\n𝐌𝐢𝐧𝐢𝐦𝐮𝐦 𝐁€T@ 𝟏𝟎𝟎\n𝐂𝐫𝐞𝐚𝐭𝐞 𝐘𝐨𝐮𝐫 🆔𝐓𝐡𝐫𝐨𝐮𝐠𝐡 𝐔𝐬 & 𝐆𝐞𝐭 𝟓% 𝐁0𝐍𝐔𝐒\n⚡ 𝐅𝐚𝐬𝐭 𝐃𝐞-𝐩𝐨𝐬𝐢𝐭 & 𝐖𝐢𝐭𝐡-𝐝𝐫𝐚𝐰𝐚𝐥\n🔒 𝐒𝐞𝐜𝐮𝐫𝐞 & 𝐓𝐫𝐮𝐬𝐭-𝐞𝐝 𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦\n𝟐𝟒𝐱𝟕 𝐂𝐮𝐬𝐭𝐨𝐦𝐞𝐫 𝐒𝐮𝐩𝐩𝐨𝐫𝐭\n━━━━━━━━━━━━━━━\n𝐈𝐍𝐃𝐈𝐀’𝐒 𝐅𝐈𝐑𝐒𝐓 𝐅𝐑𝐄𝐄 𝐏𝐑𝐄𝐃𝐈𝐂𝐓 & 𝐖𝐈𝐍 𝐒𝐈𝐓𝐄\n\nNote :- ( Humare yaha first dep0zit pe 5% b0nu$ milega )`;
+            const welcomeText = `✅★ WELCOME TO SUPREME EXCHANGE ★✅
+(Jaisa naam vaisa kaam) 
+💴💰Best ever trusted site
+            15 minutes withdrawal guarantee 
+
+Panels:
+👉 Allpanel exchange 
+👉 Diamond exchange 
+👉King365 Exchange
+👉🅱️etsmart7 Exchange
+
+WE ARE PROVIDING MULTIPLE AND ORIGINAL Exchanges FOR YOU 😍
+
+🟠 10% Bonus On NEW 🆔💴💰💵
+🟣 03% BONUS ON EVERY DEPOSIT LIFETIME
+
+Available premium S!tes
+
+
+💎 DIAM0ND €XCHANGE
+🌐 https://allpanel9.global/login
+Login with demo 🆔
+
+👑👑K!NG EXCHANGE👑👑
+🌐https://www.kingexch365.com
+Login with demo 🆔
+
+
+➡️ ALLPANEL €XCHANGE ⬅️
+🌐 www.allpanel9.global/login
+Login with demo 🆔
+
+''🅱️et Smart Exchange''
+🌐https://www.betsmart7.com
+Login with demo 🆔
+
+
+
+(Minimum DEPOSIT & Withdrawal ₹. 300)
+
+
+✅FASTEST & GENUINE SERVICE GUARANTEE
+SINCE 2018❤️✅`;
 
             const welcomeMsg = await Message.create({
               conversation: conversationId,

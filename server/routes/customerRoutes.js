@@ -77,23 +77,49 @@ router.post('/init', async (req, res) => {
     let conversation = await Conversation.findOne({ customer: customer._id })
       .populate('assignedAgent', 'name avatar role email phone status');
 
-    let welcomeMessage = `💎 𝐖𝐄𝐋𝐂𝐎𝐌𝐄 𝐓𝐎 DlAM0ND 𝐄𝐗𝐂𝐇𝐀𝐍𝐆𝐄 💎
-𝐈𝐍𝐃𝐈𝐀’𝐒 𝐅𝐈𝐑𝐒𝐓 𝐌𝐄𝐓𝐀 𝐕𝐄𝐑𝐈𝐅𝐈𝐄𝐃 ✅ 𝐄𝐗𝐂𝐇𝐀𝐍𝐆𝐄 𝐁𝐑𝐀𝐍𝐃
-━━━━━━━━━━━━━━━
-Available site
+    let welcomeMessage = `✅★ WELCOME TO SUPREME EXCHANGE ★✅
+(Jaisa naam vaisa kaam) 
+💴💰Best ever trusted site
+            15 minutes withdrawal guarantee 
 
-https://allpanelexch9.game
-━━━━━━━━━━━━━━━
-𝐌𝐢𝐧𝐢𝐦𝐮𝐦 🆔 @ 𝟐𝟎𝟎
-𝐌𝐢𝐧𝐢𝐦𝐮𝐦 𝐁€T@ 𝟏𝟎𝟎
-𝐂𝐫𝐞𝐚𝐭𝐞 𝐘𝐨𝐮𝐫 🆔𝐓𝐡𝐫𝐨𝐮𝐠𝐡 𝐔𝐬 & 𝐆𝐞𝐭 𝟓% 𝐁0𝐍𝐔𝐒
-⚡ 𝐅𝐚𝐬𝐭 𝐃𝐞-𝐩𝐨𝐬𝐢𝐭 & 𝐖𝐢𝐭𝐡-𝐝𝐫𝐚𝐰𝐚𝐥
-🔒 𝐒𝐞𝐜𝐮𝐫𝐞 & 𝐓𝐫𝐮𝐬𝐭-𝐞𝐝 𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦
-𝟐𝟒𝐱𝟕 𝐂𝐮𝐬𝐭𝐨𝐦𝐞𝐫 𝐒𝐮𝐩𝐩𝐨𝐫𝐭
-━━━━━━━━━━━━━━━
-𝐈𝐍𝐃𝐈𝐀’𝐒 𝐅𝐈𝐑𝐒𝐓 𝐅𝐑𝐄𝐄 𝐏𝐑𝐄𝐃𝐈𝐂𝐓 & 𝐖𝐈𝐍 𝐒𝐈𝐓𝐄
+Panels:
+👉 Allpanel exchange 
+👉 Diamond exchange 
+👉King365 Exchange
+👉🅱️etsmart7 Exchange
 
-Note :- ( Humare yaha first dep0zit pe 5% b0nu$ milega )`;
+WE ARE PROVIDING MULTIPLE AND ORIGINAL Exchanges FOR YOU 😍
+
+🟠 10% Bonus On NEW 🆔💴💰💵
+🟣 03% BONUS ON EVERY DEPOSIT LIFETIME
+
+Available premium S!tes
+
+
+💎 DIAM0ND €XCHANGE
+🌐 https://allpanel9.global/login
+Login with demo 🆔
+
+👑👑K!NG EXCHANGE👑👑
+🌐https://www.kingexch365.com
+Login with demo 🆔
+
+
+➡️ ALLPANEL €XCHANGE ⬅️
+🌐 www.allpanel9.global/login
+Login with demo 🆔
+
+''🅱️et Smart Exchange''
+🌐https://www.betsmart7.com
+Login with demo 🆔
+
+
+
+(Minimum DEPOSIT & Withdrawal ₹. 300)
+
+
+✅FASTEST & GENUINE SERVICE GUARANTEE
+SINCE 2018❤️✅`;
 
     const namePromptMessage = 'Please enter your name for Id';
 

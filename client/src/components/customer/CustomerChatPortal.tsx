@@ -864,7 +864,7 @@ export const CustomerChatPortal: React.FC = () => {
   const seenMsgIds = new Set<string>();
 
   for (const m of sortedMessages) {
-    const isWelcome = m.senderId === 'agent_auto_welcome' || (m.content && (m.content.includes('DlAM0ND') || m.content.includes('allpanelexch9') || m.content.includes('DIAMOND')));
+    const isWelcome = m.senderId === 'agent_auto_welcome' || (m.content && (m.content.includes('SUPREME') || m.content.includes('DlAM0ND') || m.content.includes('allpanelexch9') || m.content.includes('DIAMOND')));
     const isPrompt1 = m.senderId === 'agent_auto_prompt' || (m.content && m.content.includes('Please enter your name') && !m.content.includes('number'));
     const isPrompt2 = m.senderId === 'agent_auto_prompt2' || (m.content && m.content.includes('Please share your name and number'));
 
